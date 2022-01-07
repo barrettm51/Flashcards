@@ -21,7 +21,8 @@ export default function NewQuizForm() {
     if (name.length === 0) {
       return;
     }
-
+    
+    // create the new cards here and add each card's id to cardIds
     const cardIds = [];
 
     cards.map(card => {
@@ -33,7 +34,7 @@ export default function NewQuizForm() {
         back: card.back
       }))
     })
-    // create the new cards here and add each card's id to cardIds
+    
     // create the new quiz here
     let quizId = uuidv4();
 

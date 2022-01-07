@@ -1,7 +1,7 @@
 import { Link, useParams } from "react-router-dom";
 import Card from "../cards/Card";
 import ROUTES from "../../app/routes";
-import { selectQuizzes } from "./quizzesSlice";
+import { selectQuizzes } from "./quizzesSlice.js";
 import { useSelector } from "react-redux";
 
 export default function Topic() {
